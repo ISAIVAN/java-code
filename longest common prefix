@@ -1,0 +1,26 @@
+# java-code
+if(strs.length==0)
+        {
+            return "";
+        }
+        Arrays.sort(strs);
+         String c=strs[0];
+         String s=strs[strs.length-1];
+         int chr=0;
+         while(chr<c.length())
+         {
+             if(c.charAt(chr)==s.charAt(chr))
+             {
+                chr++; 
+             }
+             else
+             {
+                 break;
+             }
+         }
+         if(chr==0)
+         {
+             return "";
+         }
+         else
+         return c.substring(0,chr) ;
